@@ -1,3 +1,5 @@
+This version of GLFW has a premake5 file which I will be using in my game engine.
+
 # GLFW
 
 [![Build status](https://travis-ci.org/glfw/glfw.svg?branch=master)](https://travis-ci.org/glfw/glfw)
