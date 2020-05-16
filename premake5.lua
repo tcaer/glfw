@@ -71,9 +71,9 @@ project "GLFW"
       "src/cocoa_monitor.m",
       "src/cocoa_time.c",
       "src/posix_thread.c",
-      "src/cocoa_window.m"
+      "src/cocoa_window.m",
       "src/egl_context.c",
-      "src/nsgl_context.c",
+      "src/nsgl_context.m",
       "src/osmesa_context.c"
     }
 
