@@ -1,5 +1,4 @@
 project "GLFW"
-  kind "StaticLib"
   language "C"
 
   targetdir("build/bin/" .. outputdir .. "/%{prj.name}")
@@ -19,7 +18,7 @@ project "GLFW"
 
   filter "system:linux"
 		pic "On"
-
+		kind "StaticLib"
 		systemversion "latest"
 		staticruntime "On"
 
@@ -43,6 +42,7 @@ project "GLFW"
 	filter "system:windows"
 		systemversion "latest"
 		staticruntime "On"
+		kind "StaticLib"
 
 		files	{
 			"src/win32_init.c",
@@ -63,7 +63,8 @@ project "GLFW"
 
   filter "system:macosx"
     systemversion "latest"
-    staticruntime "On"
+		staticruntime "On"
+		kind "SharedLib"
     
     files {
 			"src/cocoa_init.m",
